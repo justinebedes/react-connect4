@@ -1,0 +1,20 @@
+{
+  "plugins": ["prettier-plugin-organize-imports"],
+  "printWidth": 120,
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": ["*.yml", "*.yaml"],
+      "options": {
+        "singleQuote": true
+      }
+    },
+    {
+      "files": "./.storybook/**",
+      "options": {
+        "organizeImportsSkipDestructiveCodeActions": true
+      }
+    }
+  ],
+  "organizeImportsSkipDestructiveCodeActions": false
+}
