@@ -52,7 +52,7 @@ function App() {
     setLastAIMove(null);
   };
 
-  const onClickHandler = (row: number, col: number) => {
+  const onClickHandler = (_row: number, col: number) => {
     setLastAIMove(null);
     makeMove(col, Colour.Red, currentBoard);
   }
